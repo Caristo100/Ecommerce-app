@@ -24,7 +24,7 @@ function Sub_total() {
         )}
         decimalScale={2}
         value={getCartTotal(cart)}
-        displayType="text"
+        displayType={"text"}
         thousandSeparator={true}
         prefix={"₹"}
       />
