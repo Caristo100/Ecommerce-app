@@ -6,7 +6,7 @@ import Login from "./Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { auth } from "./database";
 import { useStateValue } from "./StateProvider";
-
+import Payment from "./Payment";
 function App() {
   const [{}, dispatch] = useStateValue();
   useEffect(() => {
@@ -35,6 +35,10 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Header />
+            <Payment />
           </Route>
           <Route path="/">
             <Header />
